@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./header.ejs') %>
+  <body>
+    <div class="join-container">
+      <header class="join-header"><h1>JKlan 👹</h1></header>
+      <main class="join-main">
+        <form action="/chat">
+          <div class="info">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="Enter username..."
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="room">Room</label>
+
+            <select name="room" id="room">
+              <option value="Budweiser">Budweiser 🍺</option>
+              <option value="Whiskey">Whiskey 🥃</option>
+              <option value="Rum">Malbec 🍷</option>
+              <option value="Limoncello">Limoncello 🍾</option>
+              <option value="Vodka">Cocktail 🍸</option>
+              <option value="Scotch">Sake 🍶</option>
+            </select>
+          </div>
+          <button type="submit" class="join-btn btn">Join Chat</button>
+        </form>
+      </main>
+    </div>
+    <%- include('./footer.ejs') %>
+  </body>
+</html>
